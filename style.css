@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --color-primary: #323238;
+    --bg-card-focus-color: #02799D;
+    --bg-white: #E5E5E5;
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-white);
+    min-height: 100vh; 
+
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 12.6rem;
+    line-height: 14.8rem;
+    color: var(--color-primary);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    border: none;
+    background: transparent;
+}
+
+
+.display-timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.display-timer .timer {
+    display: flex;
+    margin-bottom: 4.8rem;
+}
+
+.display-timer .buttons {
+    display: flex;
+    gap: 4rem;
+}
+
