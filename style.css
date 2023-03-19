@@ -64,19 +64,19 @@ button {
     
 }
 
-.cards-sounds-buttons button {
+.btn-sound {
     padding: 4.8rem;
     background-color: var(--bg-button-primary);
     border-radius: 2.4rem;
 }
 
-.cards-sounds-buttons button:hover{
+.btn-sound:hover{
     cursor: pointer;
-    background-color: #c2c2c9;
 }
 
 .button-clicked {
     background-color: #02799D;
+    fill: #FFFFFF;
 }
 
 .button-clicked-fill {

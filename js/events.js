@@ -2,19 +2,26 @@ import { elements } from "./elements.js"
 
 const {
     buttonPlay,
-    buttonPause,
     buttonStop,
     buttonAdd,
     buttonDecrement,
     buttonSoundFlorest,
     buttonSoundRain,
     buttonSoundCoffee,
-    buttonSoundFire
+    buttonSoundFire,
+    svgFillFlorest,
+    svgFillRain,
+    svgFillCoffee,
+    svgFillFire
 } = elements
+        
+let playSoundFlores = true
+let playSoundRain = true
+let playSoundCoffee = true
+let playSoundFire = true
 
 
 export default function ({
-    controls,
     timer,
     sound   
 }) {
@@ -24,40 +31,68 @@ export default function ({
         sound.pressButton()
     })
     
-    buttonPause.addEventListener('click', () => {
-        controls.pause()
-        timer.hold()
-        sound.pressButton()
-    })
-    
     buttonStop.addEventListener('click', () => {
         controls.reset()
         timer.reset()
         sound.pressButton()
     })
     
-    buttonSoundOn.addEventListener('click', () => {
-        buttonSoundOn.classList.add('hide')
-        buttonSoundOff.classList.remove('hide')
-        sound.bgAudio.pause()
+    buttonSoundFlorest.addEventListener('click', () => {
+        buttonSoundFlorest.classList.toggle('button-clicked')
+        svgFillFlorest.classList.toggle('button-clicked-fill')
+        
+        sound.pressButton()
+        if (playSoundFlores) {
+            sound.bgFlorest.play()
+            playSoundFlores = false
+        } else {
+            sound.bgFlorest.pause()
+            playSoundFlores = true
+        }
+     
     })
     
-    buttonSoundOff.addEventListener('click', () => {
-        buttonSoundOff.classList.add('hide')
-        buttonSoundOn.classList.remove('hide')
-        sound.bgAudio.play()
+    buttonSoundRain.addEventListener('click', () => {
+        buttonSoundRain.classList.toggle('button-clicked')
+        svgFillRain.classList.toggle('button-clicked-fill')
+
+        sound.pressButton()
+        if (playSoundRain) {
+            sound.bgRain.play()
+            playSoundRain = false
+        } else {
+            sound.bgRain.pause()
+            playSoundRain = true
+        }
+    })
+
+    buttonSoundCoffee.addEventListener('click', () => {
+        buttonSoundCoffee.classList.toggle('button-clicked')
+        svgFillCoffee.classList.toggle('button-clicked-fill')
+       
+        sound.pressButton()
+        if (playSoundCoffee) {
+            sound.bgCoffee.play()
+            playSoundCoffee = false
+        } else {
+            sound.bgCoffee.pause()
+            playSoundCoffee = true
+        }
     })
     
-    buttonSet.addEventListener('click', () => {
-      let newMinutes = controls.getMinutes()
-    
-      if (!newMinutes) {
-        timer.reset()
-        return
-      }
-    
-      timer.updateDisplay(newMinutes, 0)
-      timer.updateMinutes(newMinutes)
+    buttonSoundFire.addEventListener('click', () => {
+        buttonSoundFire.classList.toggle('button-clicked')
+        svgFillFire.classList.toggle('button-clicked-fill')
+        
+        sound.pressButton()
+        if (playSoundFire) {
+            sound.bgFire.play()
+            playSoundFire = false
+        } else {
+            sound.bgFire.pause()
+            playSoundFire = true
+        }
     })
+    
 
 }

@@ -8,17 +8,24 @@ const buttonSoundFlorest = document.querySelector('.button-florest')
 const buttonSoundRain = document.querySelector('.button-rain')
 const buttonSoundCoffee = document.querySelector('.button-coffee')
 const buttonSoundFire= document.querySelector('.button-fire')
+const svgFillFlorest = document.querySelector('.svg-fill-florest')
+const svgFillRain = document.querySelector('.svg-fill-rain')
+const svgFillCoffee = document.querySelector('.svg-fill-coffee')
+const svgFillFire = document.querySelector('.svg-fill-fire')
 
 export const elements = {
     minutesDisplay,
     secondsDisplay,
     buttonPlay,
-    buttonPause,
     buttonStop,
     buttonAdd,
     buttonDecrement,
     buttonSoundFlorest,
     buttonSoundRain,
     buttonSoundCoffee,
-    buttonSoundFire
+    buttonSoundFire,
+    svgFillFlorest,
+    svgFillRain,
+    svgFillCoffee,
+    svgFillFire
 }
