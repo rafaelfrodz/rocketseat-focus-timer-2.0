@@ -26,14 +26,17 @@ export default function ({
     sound   
 }) {
     buttonPlay.addEventListener('click', () => {
-        controls.play()
         timer.countdown()
         sound.pressButton()
     })
     
     buttonStop.addEventListener('click', () => {
-        controls.reset()
         timer.reset()
+        sound.pressButton()
+    })
+
+    buttonAdd.addEventListener('click', () => {
+        timer.addFiveMinutes()
         sound.pressButton()
     })
     
