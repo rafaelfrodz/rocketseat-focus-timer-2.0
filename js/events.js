@@ -46,7 +46,7 @@ export default function ({
     })
     
     buttonSoundFlorest.addEventListener('click', () => {
-        buttonSoundFlorest.classList.toggle('button-clicked')
+        document.querySelector('.card-florest').classList.toggle('button-clicked')
         svgFillFlorest.classList.toggle('button-clicked-fill')
         
         sound.pressButton()
@@ -61,7 +61,7 @@ export default function ({
     })
     
     buttonSoundRain.addEventListener('click', () => {
-        buttonSoundRain.classList.toggle('button-clicked')
+        document.querySelector('.card-rain').classList.toggle('button-clicked')
         svgFillRain.classList.toggle('button-clicked-fill')
 
         sound.pressButton()
@@ -75,7 +75,7 @@ export default function ({
     })
 
     buttonSoundCoffee.addEventListener('click', () => {
-        buttonSoundCoffee.classList.toggle('button-clicked')
+        document.querySelector('.card-coffee').classList.toggle('button-clicked')
         svgFillCoffee.classList.toggle('button-clicked-fill')
        
         sound.pressButton()
@@ -89,7 +89,7 @@ export default function ({
     })
     
     buttonSoundFire.addEventListener('click', () => {
-        buttonSoundFire.classList.toggle('button-clicked')
+        document.querySelector('.card-fire').classList.toggle('button-clicked')
         svgFillFire.classList.toggle('button-clicked-fill')
         
         sound.pressButton()
@@ -101,6 +101,4 @@ export default function ({
             playSoundFire = true
         }
     })
-    
-
 }

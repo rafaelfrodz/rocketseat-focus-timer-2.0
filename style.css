@@ -36,6 +36,13 @@ main {
     gap: 19.2rem;
 }
 
+.theme {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 6rem;
+}
+
 button {
     border: none;
     background: transparent;
@@ -64,10 +71,20 @@ button {
     
 }
 
-.btn-sound {
-    padding: 4.8rem;
+
+.card-sound {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    
+    padding: 2.4rem;
     background-color: var(--bg-button-primary);
     border-radius: 2.4rem;
+}
+
+.card-sound input {
+    
+    width: 9rem;
 }
 
 .btn-sound:hover{
@@ -82,3 +99,4 @@ button {
 .button-clicked-fill {
     fill: #FFFFFF;
 }
+

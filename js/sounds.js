@@ -9,6 +9,8 @@ export default function () {
 
     bgAudio.loop = true
     
+    
+
     function pressButton() {
         buttonPressAudio.play()
     }
