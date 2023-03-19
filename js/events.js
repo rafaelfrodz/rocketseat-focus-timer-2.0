@@ -39,6 +39,11 @@ export default function ({
         timer.addFiveMinutes()
         sound.pressButton()
     })
+
+    buttonDecrement.addEventListener('click', () => {
+        timer.removeFiveMinutos()
+        sound.pressButton()
+    })
     
     buttonSoundFlorest.addEventListener('click', () => {
         buttonSoundFlorest.classList.toggle('button-clicked')

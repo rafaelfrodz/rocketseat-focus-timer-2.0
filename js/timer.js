@@ -18,12 +18,25 @@ export function Timer({
 
     function addFiveMinutes () {
         minutes = minutes + 5
+
         updateDisplay(minutes, secondsControl - 1)
         console.log(minutes)
     }
 
+    function removeFiveMinutos () {
+        if (minutes > 0) {
+          minutes =  minutes - 5
+        } else {
+            minutes = minutes = 0
+        }
+       
+        updateDisplay(minutes, secondsControl - 1)
+        console.log(minutes)
+    } 
+
+
     function reset () {
-        updateDisplay(minutes, 0)
+        updateDisplay(25, 0)
         clearTimeout(timerTimeOut)
     }
 
@@ -41,7 +54,7 @@ export function Timer({
                 Sounds().timeEnd()
                 return
             }
-            
+
             if (seconds <= 0 ) {
                 seconds = 60
                 --minutes
@@ -67,6 +80,7 @@ export function Timer({
         updateDisplay,
         updateMinutes,
         hold,
-        addFiveMinutes
+        addFiveMinutes,
+        removeFiveMinutos
     }
 }
