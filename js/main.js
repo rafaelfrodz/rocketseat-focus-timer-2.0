@@ -4,18 +4,11 @@ import {Timer} from "./timer.js"
 import { elements } from "./elements.js"
 import Sound from "./sounds.js"
 import Events from "./events.js"
+import controlsVolume from "./controlsVolume.js"
 
 const {
     minutesDisplay,
     secondsDisplay,
-    buttonPlay,
-    buttonStop,
-    buttonAdd,
-    buttonDecrement,
-    buttonSoundFlorest,
-    buttonSoundRain,
-    buttonSoundCoffee,
-    buttonSoundFire
 } = elements
 
 
@@ -28,4 +21,4 @@ const timer = Timer({
 const sound = Sound()
 
 Events ({ timer, sound})
-
+controlsVolume({sound})

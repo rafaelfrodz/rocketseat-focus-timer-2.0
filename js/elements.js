@@ -12,7 +12,10 @@ const svgFillFlorest = document.querySelector('.svg-fill-florest')
 const svgFillRain = document.querySelector('.svg-fill-rain')
 const svgFillCoffee = document.querySelector('.svg-fill-coffee')
 const svgFillFire = document.querySelector('.svg-fill-fire')
-const cardFlorest = document.querySelector('.card-florest')
+let volumeFlorest = document.querySelector('#volume-florest')
+let volumeRain = document.querySelector('#volume-rain')
+let volumeCoffee = document.querySelector('#volume-coffee')
+let volumeFire = document.querySelector('#volume-fire')
 
 export const elements = {
     minutesDisplay,
@@ -28,5 +31,9 @@ export const elements = {
     svgFillFlorest,
     svgFillRain,
     svgFillCoffee,
-    svgFillFire
+    svgFillFire,
+    volumeFlorest,
+    volumeRain,
+    volumeCoffee,
+    volumeFire
 }

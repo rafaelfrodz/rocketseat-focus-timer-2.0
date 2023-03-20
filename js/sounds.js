@@ -8,7 +8,10 @@ export default function () {
     const bgFire = new Audio("/sounds/fire.wav")
 
     bgAudio.loop = true
-    
+    bgFlorest.volume = 0.5
+    bgRain.volume = 0.5
+    bgCoffee.volume = 0.5
+    bgFire.volume = 0.5
     
 
     function pressButton() {
