@@ -1,6 +1,14 @@
 import { elements } from "./elements.js"
 
 const {
+    buttonDarkModeWhite,
+    buttonDarkModeBlack,
+    cardFlorest,
+    cardRain,
+    cardCoffee,
+    cardFire,
+    minutesDisplay,
+    secondsDisplay,
     buttonPlay,
     buttonStop,
     buttonAdd,
@@ -12,7 +20,17 @@ const {
     svgFillFlorest,
     svgFillRain,
     svgFillCoffee,
-    svgFillFire
+    svgFillFire,
+    svgFillPlay,
+    svgFillStop,
+    svgFillAdd,
+    svgFillDecrement,
+    volumeFlorest,
+    volumeRain,
+    volumeCoffee,
+    volumeFire,
+    body,
+    textTimer,
 } = elements
         
 let playSoundFlores = true
@@ -25,6 +43,47 @@ export default function ({
     timer,
     sound   
 }) {
+
+    buttonDarkModeWhite.addEventListener('click', () => {
+        body.classList.add('body-dark')
+        textTimer.classList.add('timer-dark')
+        svgFillPlay.classList.add('button-dark-fill')
+        svgFillStop.classList.add('button-dark-fill')
+        svgFillAdd.classList.add('button-dark-fill')
+        svgFillDecrement.classList.add('button-dark-fill')
+        svgFillFlorest.classList.add('button-dark-fill')
+        svgFillRain.classList.add('button-dark-fill')
+        svgFillCoffee.classList.add('button-dark-fill')
+        svgFillFire.classList.add('button-dark-fill')
+        cardFlorest.classList.add('card-dark')
+        cardRain.classList.add('card-dark')
+        cardCoffee.classList.add('card-dark')
+        cardFire.classList.add('card-dark')
+        buttonDarkModeWhite.classList.add('hide')
+        buttonDarkModeBlack.classList.remove('hide')
+    })
+
+    buttonDarkModeBlack.addEventListener('click', () => {
+        body.classList.remove('body-dark')
+        textTimer.classList.remove('timer-dark')
+        svgFillPlay.classList.remove('button-dark-fill')
+        svgFillStop.classList.remove('button-dark-fill')
+        svgFillAdd.classList.remove('button-dark-fill')
+        svgFillDecrement.classList.remove('button-dark-fill')
+        svgFillFlorest.classList.remove('button-dark-fill')
+        svgFillRain.classList.remove('button-dark-fill')
+        svgFillCoffee.classList.remove('button-dark-fill')
+        svgFillFire.classList.remove('button-dark-fill')
+        cardFlorest.classList.remove('card-dark')
+        cardRain.classList.remove('card-dark')
+        cardCoffee.classList.remove('card-dark')
+        cardFire.classList.remove('card-dark')
+        buttonDarkModeWhite.classList.remove('hide')
+        buttonDarkModeBlack.classList.add('hide')
+
+    })
+
+
     buttonPlay.addEventListener('click', () => {
         timer.countdown()
         sound.pressButton()
@@ -46,9 +105,9 @@ export default function ({
     })
     
     buttonSoundFlorest.addEventListener('click', () => {
-        document.querySelector('.card-florest').classList.toggle('button-clicked')
+        document.querySelector('.cards-sounds-buttons div').classList.toggle('button-clicked')
         svgFillFlorest.classList.toggle('button-clicked-fill')
-        
+
         sound.pressButton()
         if (playSoundFlores) {
             sound.bgFlorest.play()
@@ -61,7 +120,7 @@ export default function ({
     })
     
     buttonSoundRain.addEventListener('click', () => {
-        document.querySelector('.card-rain').classList.toggle('button-clicked')
+        cardRain.classList.toggle('button-clicked')
         svgFillRain.classList.toggle('button-clicked-fill')
 
         sound.pressButton()
@@ -75,7 +134,7 @@ export default function ({
     })
 
     buttonSoundCoffee.addEventListener('click', () => {
-        document.querySelector('.card-coffee').classList.toggle('button-clicked')
+        cardCoffee.classList.toggle('button-clicked')
         svgFillCoffee.classList.toggle('button-clicked-fill')
        
         sound.pressButton()
@@ -89,7 +148,7 @@ export default function ({
     })
     
     buttonSoundFire.addEventListener('click', () => {
-        document.querySelector('.card-fire').classList.toggle('button-clicked')
+        cardFire.classList.toggle('button-clicked')
         svgFillFire.classList.toggle('button-clicked-fill')
         
         sound.pressButton()

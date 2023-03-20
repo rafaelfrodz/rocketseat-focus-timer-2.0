@@ -12,6 +12,11 @@
     --bg-white: #FFFFFF;
     --bg-button-primary: #E1E1E6;
     --bg-button-focus: #02799D;
+
+    --bg-black: #000000;
+    --bg-button-black-theme: #C4C4CC;
+    --tb-text-lua: #FFFFFF;
+    --bg-card: rgba(41, 41, 46, 1);
 }
 
 
@@ -36,7 +41,7 @@ main {
     gap: 19.2rem;
 }
 
-.theme {
+.btn-darkmode {
     position: absolute;
     right: 0;
     top: 0;
@@ -91,12 +96,41 @@ button {
     cursor: pointer;
 }
 
-.button-clicked {
+
+/* ----------------------  DARK MODE ------------------------- */
+
+.button-dark-mode {
+    fill: var(--tb-text-lua);
+}
+
+.timer-dark {
+    color: var(--tb-text-lua);
+}
+
+.body-dark{
+    background-color: var(--bg-black);
+}
+
+.card-dark {
+    background-color: var(--bg-card);
+}
+
+.button-dark-fill {
+    fill: var(--bg-button-black-theme);
+}
+
+
+/* ---------------------- CARD ------------------------- */
+
+
+.button-clicked  {
     background-color: #02799D;
-    fill: #FFFFFF;
 }
 
 .button-clicked-fill {
     fill: #FFFFFF;
 }
 
+.hide {
+    display: none;
+}
