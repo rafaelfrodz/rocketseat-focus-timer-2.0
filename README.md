@@ -1,4 +1,4 @@
-# DESAFIO - FOCUS TIMER
+# DESAFIO - FOCUS TIMER 2.0
 
 # Sobre o desafio
 
