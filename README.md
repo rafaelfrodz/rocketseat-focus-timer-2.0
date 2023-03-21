@@ -6,7 +6,7 @@ Desenvolver um fórmulario em uma página web do zero, aplicando todos os concei
 
 # Figma da aplicação
 
-<img alt="screenshot da página web do layout no figma" src="https://imgur.com/2GbzosJ">
+<img alt="screenshot da página web do layout no figma" src="https://i.imgur.com/2GbzosJ.png">
 
 ## Objetivo
 
@@ -33,8 +33,8 @@ Colocar os conceitos das aulas de javascript (modulação e manipulação da DOM
 - -: diminui em 5 minutos o tempo do timer.
 
 ## Screenshot do projeto
-<img alt="screenshot da página web da aplicação" src="https://imgur.com/rWagV2w">
-<img alt="screenshot da página web da aplicação em dark mode" src="https://imgur.com/RZ3ZJIE">
+<img alt="screenshot da página web da aplicação" src="https://i.imgur.com/rWagV2w.png">
+<img alt="screenshot da página web da aplicação em dark mode" src="https://i.imgur.com/RZ3ZJIE.png">
 <img alt="screenshot da página web da aplicação em modo mobile" src="https://i.imgur.com/6Dvi6ho.png">
 
 [Clique aqui para acessar a página](https://rafaelfrodz.github.io/rocketseat-focus-timer-2.0/)
