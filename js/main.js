@@ -1,6 +1,6 @@
 // default import 
 
-import {Timer} from "./timer.js" 
+import { Timer } from "./timer.js" 
 import { elements } from "./elements.js"
 import Sound from "./sounds.js"
 import Events from "./events.js"
@@ -10,8 +10,6 @@ const {
     minutesDisplay,
     secondsDisplay,
 } = elements
-
-
 
 const timer = Timer({
     minutesDisplay, 
