@@ -1,8 +1,8 @@
-# DESAFIO - CRIANDO FORMULÁRIOS
+# DESAFIO - FOCUS TIMER
 
 # Sobre o desafio
 
-Desenvolver um fórmulario em uma página web do zero, aplicando todos os conceitos aprendidos nas aulas, e claro, deixar a página com acessibilidade. 
+Desenvolver um cronometro que contenha alguns sons para melhorar o foco do usuário.
 
 # Figma da aplicação
 
