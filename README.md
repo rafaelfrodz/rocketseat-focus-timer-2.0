@@ -35,7 +35,7 @@ Colocar os conceitos das aulas de javascript (modulação e manipulação da DOM
 ## Screenshot do projeto
 <img alt="screenshot da página web da aplicação" src="https://imgur.com/rWagV2w">
 <img alt="screenshot da página web da aplicação em dark mode" src="https://imgur.com/RZ3ZJIE">
-<img alt="screenshot da página web da aplicação em modo mobile" src="https://imgur.com/6Dvi6ho">
+<img alt="screenshot da página web da aplicação em modo mobile" src="https://i.imgur.com/6Dvi6ho.png">
 
 [Clique aqui para acessar a página](https://rafaelfrodz.github.io/rocketseat-focus-timer-2.0/)
 
