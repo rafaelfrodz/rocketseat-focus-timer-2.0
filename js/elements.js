@@ -6,6 +6,7 @@ const cardFire = document.querySelector('.card-fire')
 const minutesDisplay = document.querySelector('.minutes')
 const secondsDisplay = document.querySelector('.seconds')
 const buttonPlay = document.querySelector('.button-play')
+const buttonPause = document.querySelector('.button-pause')
 const buttonStop= document.querySelector('.button-stop')
 const buttonAdd = document.querySelector('.button-add')
 const buttonDecrement = document.querySelector('.button-decrement')
@@ -18,6 +19,8 @@ const svgFillRain = document.querySelector('.svg-fill-rain')
 const svgFillCoffee = document.querySelector('.svg-fill-coffee')
 const svgFillFire = document.querySelector('.svg-fill-fire')
 const svgFillPlay = document.querySelector('.button-play svg path')
+const svgPauseWhite = document.querySelector('.svg-pause-white')
+const svgPauseBlack = document.querySelector('.svg-pause-black')
 const svgFillStop = document.querySelector('.button-stop svg path')
 const svgFillAdd = document.querySelector('.button-add svg path')
 const svgFillDecrement = document.querySelector('.button-decrement svg path')
@@ -41,6 +44,7 @@ export const elements = {
     minutesDisplay,
     secondsDisplay,
     buttonPlay,
+    buttonPause,
     buttonStop,
     buttonAdd,
     buttonDecrement,
@@ -62,4 +66,6 @@ export const elements = {
     volumeFire,
     body,
     textTimer,
+    svgPauseWhite,
+    svgPauseBlack
 }

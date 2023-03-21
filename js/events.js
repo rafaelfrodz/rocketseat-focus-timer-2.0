@@ -10,6 +10,7 @@ const {
     minutesDisplay,
     secondsDisplay,
     buttonPlay,
+    buttonPause,
     buttonStop,
     buttonAdd,
     buttonDecrement,
@@ -22,6 +23,7 @@ const {
     svgFillCoffee,
     svgFillFire,
     svgFillPlay,
+    svgFillPause,
     svgFillStop,
     svgFillAdd,
     svgFillDecrement,
@@ -31,6 +33,8 @@ const {
     volumeFire,
     body,
     textTimer,
+    svgPauseWhite,
+    svgPauseBlack
 } = elements
         
 let playSoundFlores = true
@@ -48,6 +52,9 @@ export default function ({
         body.classList.add('body-dark')
         textTimer.classList.add('timer-dark')
         svgFillPlay.classList.add('button-dark-fill')
+        svgPauseWhite.classList.add('hide')
+        svgPauseBlack.classList.remove('hide')
+        
         svgFillStop.classList.add('button-dark-fill')
         svgFillAdd.classList.add('button-dark-fill')
         svgFillDecrement.classList.add('button-dark-fill')
@@ -66,6 +73,8 @@ export default function ({
     buttonDarkModeBlack.addEventListener('click', () => {
         body.classList.remove('body-dark')
         textTimer.classList.remove('timer-dark')
+        svgPauseWhite.classList.remove('hide')
+        svgPauseBlack.classList.add('hide')
         svgFillPlay.classList.remove('button-dark-fill')
         svgFillStop.classList.remove('button-dark-fill')
         svgFillAdd.classList.remove('button-dark-fill')
@@ -87,11 +96,21 @@ export default function ({
     buttonPlay.addEventListener('click', () => {
         timer.countdown()
         sound.pressButton()
+        buttonPlay.classList.add('hide')
+        buttonPause.classList.remove('hide')
+    })
+
+    buttonPause.addEventListener('click', () => {
+        buttonPause.classList.add('hide')
+        buttonPlay.classList.remove('hide')
+        timer.hold()
     })
     
     buttonStop.addEventListener('click', () => {
         timer.reset()
         sound.pressButton()
+        buttonPause.classList.add('hide')
+        buttonPlay.classList.remove('hide')
     })
 
     buttonAdd.addEventListener('click', () => {
