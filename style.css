@@ -134,3 +134,21 @@ button {
 .hide {
     display: none;
 }
+
+/* ---------------------- MEDIA QUERY ------------------------- */
+
+@media (max-width: 900px) {
+    main {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .btn-darkmode {
+        position: relative;
+        margin-bottom: 3rem;
+        margin-left: auto;
+        margin-right: -0.1rem;
+        margin-top: 1rem;
+        
+    }
+}
